@@ -21,6 +21,7 @@ COPY . .
 # 環境変数の設定
 ENV CHROME_PATH=/usr/bin/chromium
 ENV PORT=7860
+ENV NODE_ENV=production
 
 # ポートの公開
 EXPOSE 7860
