@@ -1,4 +1,4 @@
-# Lighthouse Analysis API
+# Lighthouse Analysis API ドキュメント
 
 このAPIは、指定されたURLに対してLighthouse分析を実行し、パフォーマンス、SEO、リンク分析などの包括的な情報を提供します。
 
@@ -257,4 +257,4 @@ def analyze_site():
 
 ## サポート
 
-問題や質問がある場合は、GitHubのIssuesでお問い合わせください。
+問題や質問がある場合は、GitHubのIssuesでお問い合わせください。 
