@@ -1,6 +1,6 @@
 ---
 title: Lighthouse Analyzer
-emoji: ""
+emoji: "🚀"
 colorFrom: blue
 colorTo: green
 sdk: docker
