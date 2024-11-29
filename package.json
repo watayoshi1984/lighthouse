@@ -38,7 +38,9 @@
     "lint": "[ \"$CI\" = true ] && eslint --quiet -f codeframe . || eslint .",
     "smoke": "node -r source-map-support/register cli/test/smokehouse/frontends/smokehouse-bin.js",
     "debug": "node --inspect-brk ./cli/index.js",
-    "start": "yarn build-report --standalone && node ./cli/index.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "build": "npm run build-report --standalone && npm run build-types",
     "mocha": "node --loader=testdouble core/test/scripts/run-mocha-tests.js",
     "test": "yarn diff:sample-json && yarn lint --quiet && yarn unit && yarn type-check",
     "test-bundle": "yarn smoke --runner bundle",
@@ -209,7 +211,10 @@
     "ws": "^7.0.0",
     "yargs": "^17.3.1",
     "express": "^4.17.1",
-    "yargs-parser": "^21.0.0"
+    "yargs-parser": "^21.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
   },
   "resolutions": {
     "puppeteer/**/devtools-protocol": "0.0.1312386",
